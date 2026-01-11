@@ -1,6 +1,6 @@
-# Apartado 3: Errores en el código
+# Apartado 2: Errores en el código
+
 En este apartado se explicaran los 14 errores que habia en el código.
----
 
 ## 1. Errores de Estado y Validaciones (Tests 1–3)
 

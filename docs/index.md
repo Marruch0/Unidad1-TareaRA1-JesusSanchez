@@ -7,11 +7,9 @@
 ## Índice de contenidos
 1. [Introducción](index.md)
 	* *Introducción de la actividad*
-2. [Ejecucion y Depuracion](depuracion.md)
-	* *Resolución de los problemas de arranque, corrección de rutas y arreglos de sintaxis*
-3. [Pruebas](tests.md)
-	* *Arreglo de los 10 errores del programa*
-4. [Sandbox](sandbox.md)
+2. [Errores en el código](tests.md)
+	* *Resolución de los problemas del programa*
+3. [Sandbox](sandbox.md)
 	* *Ejecución segura del programa*
 
 ## Introducción
@@ -20,5 +18,5 @@ En esta práctica he trabajado sobre una aplicación Python llamada "Lavadero". 
 El código fuente comentado y corregido se encuentra en la carpeta `src/` de este repositorio.
 
 ---
-Continuar con la siguiente pagina --> [Continuar](depuracion.md)
+Continuar con la siguiente pagina --> [Continuar](tests.md)
 
