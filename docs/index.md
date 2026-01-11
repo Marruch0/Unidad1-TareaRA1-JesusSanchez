@@ -13,9 +13,9 @@
 	* *Ejecución segura del programa*
 
 ## Introducción
-En esta práctica he trabajado sobre una aplicación Python llamada "Lavadero". El objetivo ha sido analizar un código heredado, documentarlo, corregir sus errores de ejecución y, lo más importante, crear una batería de pruebas unitarias para asegurar que cumple con las reglas de negocio.
+En esta práctica he trabajado sobre una aplicación Python llamada "Lavadero". El objetivo ha sido analizar el código, documentarlo y corregir sus errores de ejecución.
 
-El código fuente comentado y corregido se encuentra en la carpeta `src/` de este repositorio.
+El código fuente corregido se encuentra en la carpeta `src/` de este repositorio.
 
 ---
 Continuar con la siguiente pagina --> [Continuar](tests.md)
