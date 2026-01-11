@@ -5,6 +5,7 @@ Lo primero que hice fue intentar ejecutar el archivo `main_app.py`. El programa 
 
 ### Error 1: Rutas de Importación (ModuleNotFoundError)
 * **El Problema:** Al ejecutar los tests desde la terminal, Python no encontraba el archivo `lavadero.py`.
+![Error 1](imagenes/Error1.png)
 * **La Causa:** La carpeta de tests no "veía" la carpeta `src` donde estaba el código.
 * **Solución:** Tuve que añadir un "parche" en el `sys.path` dentro del archivo de test para que incluyera dinámicamente la ruta de la carpeta superior.
 
