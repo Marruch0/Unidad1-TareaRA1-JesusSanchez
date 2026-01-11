@@ -1,7 +1,5 @@
 # Apartado 3: Pruebas Unitarias y Lógica
-En este apartado se explicaran los siguientes 11 errores restantes.
-
-
+En este apartado se explicaran los siguientes 11 errores restantes:
 ---
 
 ## 2. Errores de Precios (Tests 4–8)
@@ -10,6 +8,7 @@ En este apartado se explicaran los siguientes 11 errores restantes.
 
 * **El Problema**
   El coste total no sumaba los **6.50 €** esperados.
+  ![Error 4](imagenes/Error4.png)
 
 * **La Causa**
   La lógica de `_cobrar` no aplicaba correctamente el incremento de **1.50 €**.
@@ -29,6 +28,7 @@ En este apartado se explicaran los siguientes 11 errores restantes.
 
 * **El Problema**
   El sistema cobraba de más (total incorrecto en lugar de **6.00 €**).
+    ![Error 5](imagenes/Error5.png)
 
 * **La Causa**
   El código original sumaba **1.20 €**, cuando la regla indica **1.00 €** (5 + 1).
@@ -46,6 +46,7 @@ En este apartado se explicaran los siguientes 11 errores restantes.
 
 * **El Problema**
   El total no alcanzaba los **7.20 €** al pedir secado y encerado.
+    ![Error 6](imagenes/Error6.png)
 
 * **La Causa**
   El precio del encerado estaba mal definido (probablemente **1.00 €**).
@@ -59,6 +60,7 @@ En este apartado se explicaran los siguientes 11 errores restantes.
 
 * **El Problema**
   El cálculo combinado fallaba.
+    ![Error 7](imagenes/Error7.png)
 
 * **La Causa**
   Error arrastrado del precio incorrecto del secado (Error 5).
@@ -72,6 +74,7 @@ En este apartado se explicaran los siguientes 11 errores restantes.
 
 * **El Problema**
   El total no era **8.70 €** como se esperaba.
+    ![Error 8](imagenes/Error8.png)
 
 * **La Causa**
   Suma de errores en los precios de secado y encerado.
@@ -87,6 +90,7 @@ En este apartado se explicaran los siguientes 11 errores restantes.
 
 * **El Problema**
   El ciclo sin extras terminaba abruptamente o entraba en fases desconocidas.
+    ![Error 9](imagenes/Error9.png)
 
 * **La Causa**
   La máquina de estados (`avanzarFase`) tenía condicionales incorrectos.
@@ -104,6 +108,7 @@ En este apartado se explicaran los siguientes 11 errores restantes.
 
 * **El Problema**
   La Fase 2 se saltaba aunque el prelavado estuviera contratado.
+    ![Error 10](imagenes/Error10.png)
 
 * **La Causa**
   Desde `FASE_COBRANDO (1)` se pasaba directamente a echar agua (3).
@@ -117,6 +122,7 @@ En este apartado se explicaran los siguientes 11 errores restantes.
 
 * **El Problema**
   Desde los rodillos (Fase 5) siempre se iba al secado automático.
+    ![Error 11](imagenes/Error11.png)
 
 * **La Causa**
   El `if` ignoraba la preferencia de secado manual.
@@ -132,6 +138,7 @@ En este apartado se explicaran los siguientes 11 errores restantes.
 
 * **El Problema**
   El ciclo terminaba en la **Fase 7**, sin pasar por el encerado.
+    ![Error 12](imagenes/Error12.png)
 
 * **La Causa**
   La Fase 7 llamaba directamente a `terminar()`.
@@ -147,6 +154,7 @@ En este apartado se explicaran los siguientes 11 errores restantes.
 
 * **El Problema**
   Fallaba la combinación de prelavado y secado.
+    ![Error 13](imagenes/Error13.png)
 
 * **La Causa**
   Errores acumulados de las transiciones (Errores 10 y 11).
@@ -160,6 +168,7 @@ En este apartado se explicaran los siguientes 11 errores restantes.
 
 * **El Problema**
   El recorrido más largo fallaba:
+    ![Error 14](imagenes/Error14.png)
 
   ```
   0 → 1 → 2 → 3 → 4 → 5 → 7 → 8 → 0
