@@ -11,17 +11,15 @@ Lo primero que hice fue intentar ejecutar el archivo `main_app.py`. El programa 
 
 ### Error 2: Diferencia de Nombres (AttributeError)
 * **El Problema:** El archivo `main_app.py` intentaba llamar a una función `lavadero.hacerLavado()`, pero el programa fallaba diciendo que no existía.
+![Error 2](imagenes/Error2.png)
 * **La Causa:** Al revisar la clase `Lavadero`, vi que el método estaba definido como protegido: `_hacer_lavado` (con guion bajo).
 * **Solución:** Corregí la llamada en el main para usar el nombre correcto: `_hacer_lavado`.
 
 ### Error 3: Argumentos Faltantes (TypeError)
 * **El Problema:** El Ejemplo 4 del main lanzaba un error inmediato al ejecutarse.
+![Error 3](imagenes/Error3.png)
 * **La Causa:** Se estaba llamando a la función de lavado pasando solo 2 argumentos, cuando la definición exige 3 (faltaba el booleano de `encerado`).
 * **Solución:** Añadí `encerado=False` a esa llamada en el main.
-
-### Error 4: Mayúsculas en Linux (ImportError)
-* **El Problema:** El archivo se llamaba `Lavadero.py` (con mayúscula) pero el import buscaba `lavadero`. En Windows funcionaba, pero en Linux fallaba.
-* **Solución:** Renombré el archivo a minúsculas `lavadero.py` para seguir las buenas prácticas de Python (PEP8).
 
 ---
 
