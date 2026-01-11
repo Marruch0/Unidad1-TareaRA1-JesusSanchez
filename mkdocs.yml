@@ -1,8 +1,7 @@
 site_name: PPS Unidad 1 - Jesus Sanchez
 nav:
   - Inicio: index.md
-  - Ejecucion y Depuración: depuracion.md
-  - Test y Lógica: tests.md
+  - Errores en el código: tests.md
   - Entorno Seguro: sandbox.md
 
 theme:
