@@ -14,13 +14,12 @@ En este apartado se explicaran los siguientes 11 errores restantes:
   La lógica de `_cobrar` no aplicaba correctamente el incremento de **1.50 €**.
 
 * **Solución**
-  Se verificó que el bloque:
+  Se verificó en `_cobrar` que el bloque sume exactamente **1.50 €**:
 
   ```python
-  if self.prelavado_a_mano:
+  if self.__prelavado_a_mano:
+              coste_lavado += 1.50 
   ```
-
-  sume exactamente **1.50 €**.
 
 ---
 
@@ -34,10 +33,11 @@ En este apartado se explicaran los siguientes 11 errores restantes:
   El código original sumaba **1.20 €**, cuando la regla indica **1.00 €** (5 + 1).
 
 * **Solución**
-  Se corrigió en `_cobrar`:
+  Se corrigió en `_cobrar` que el bloque sume **1€**:
 
   ```python
-  coste_lavado += 1.00
+  if self.__secado_a_mano:
+              coste_lavado += 1.00 # CORREGIDO (Antes 1.20)
   ```
 
 ---
@@ -53,6 +53,10 @@ En este apartado se explicaran los siguientes 11 errores restantes:
 
 * **Solución**
   Se ajustó el precio del encerado a **1.20 €**.
+  ```python
+  if self.__encerado:
+              coste_lavado += 1.20 # CORREGIDO (Antes 1.00)
+  ```
 
 ---
 
@@ -188,7 +192,8 @@ Todos los **14 tests unitarios pasan correctamente** tras aplicar las correccion
 
 
 **Resultado Final (Tests OK):**
-Tras aplicar estas correcciones lógicas en `src/lavadero.py`, volví a lanzar los tests.
+Tras aplicar estas correcciones lógicas en `src/lavadero.py`, volví a lanzar los tests:
 
 ![Tests en Verde](tests_verdes.png)
+
 *Todos los requisitos funcionales se cumplen ahora.*
