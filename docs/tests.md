@@ -194,6 +194,6 @@ Todos los **14 tests unitarios pasan correctamente** tras aplicar las correccion
 **Resultado Final (Tests OK):**
 Tras aplicar estas correcciones lógicas en `src/lavadero.py`, volví a lanzar los tests:
 
-	![Tests](tests_verdes.png)
+![Tests](imagenes/tests_verdes.png)
 
 *Todos los requisitos funcionales se cumplen ahora.*
