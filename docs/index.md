@@ -1,7 +1,7 @@
-# Tarea RA1: Análisis, Depuración y Pruebas
-**Alumno:** Jesús Sánchez Sánchez
-**Módulo:** Puesta en Producción Segura
-**Curso:** Especialización en Ciberseguridad
+# Tarea Unidad 1
+**Alumno:** Jesús Sánchez  
+**Asignatura:** Puesta en Producción Segura  
+**Curso:** 2025-2026
 ![Imagen de la portada](imagenes/python.png)
 
 ## Índice de contenidos
