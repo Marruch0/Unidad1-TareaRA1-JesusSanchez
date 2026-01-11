@@ -21,5 +21,4 @@ El código fuente comentado y corregido se encuentra en la carpeta `src/` de est
 
 ---
 Continuar con la siguiente pagina --> [Continuar](depuracion.md)
----
 

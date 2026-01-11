@@ -21,8 +21,3 @@ Lo primero que hice fue intentar ejecutar el archivo `main_app.py`. El programa 
 * **La Causa:** Se estaba llamando a la función de lavado pasando solo 2 argumentos, cuando la definición exige 3 (faltaba el booleano de `encerado`).
 * **Solución:** Añadí `encerado=False` a esa llamada en el main.
 
----
-
-**Evidencia de ejecución correcta tras las correcciones:**
-![Captura del Main funcionando](ejecucion_main.png)
-*Ahora el programa ejecuta el ciclo visualmente sin errores.*
